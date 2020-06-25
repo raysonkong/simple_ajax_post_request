@@ -13,7 +13,7 @@ app.use(helmet());
 app.post('/ajax', (req, res) => {
     console.log(req.body);
   //  console.log(req.headers);
-    res.send("Test Success!")
+    res.json("If this appears in Chrome Console => Success!")
 })
 
 app.listen(port, () => console.log(`App is listening on ${port}`))
